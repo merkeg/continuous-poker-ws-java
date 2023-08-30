@@ -1,5 +1,9 @@
 # Continuous Poker Java Websocket Client
 This is the java client for the [dealer](https://github.com/merkeg/continuous-poker-dealer)
+## Requirements
+- Java 17
+- Maven >= 3.6
+
 ## Running the application
 1. Clone this repository
 2. Setup the application in your IDE
