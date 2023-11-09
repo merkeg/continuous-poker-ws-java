@@ -10,9 +10,9 @@ public class Strategy {
 
     public static Settings setup() {
         return Settings.builder()
-                .host("localhost:8080")
-                .gameId(1494090988)
-                .teamName("zerstoerer")
+                .host("37.120.182.152:8080")
+                .gameId(123456)
+                .teamName("teamname")
                 .build();
     }
 

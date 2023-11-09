@@ -1,11 +1,10 @@
 package de.merkeg.poker;
 
-import java.net.URI;
-import java.net.URISyntaxException;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
         Settings s = Strategy.setup();
 
         if(args.length == 3) {
@@ -17,6 +16,7 @@ public class Main {
         }
 
         WebSocketClient client = new WebSocketClient(s.getURI());
+        log.info("Connecting via WebSocket on {}", s.getURI());
         client.connect();
     }
 }
